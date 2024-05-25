@@ -31,3 +31,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+    - name: cowsays      
+      uses: mscoutermarsh/cowsays-action@v1
+      with:
+        # What does the cow say?
+        text: "ready for prods, ship it"
+        # Color of your cow
+        color: "magenta"  
+  
